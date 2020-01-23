@@ -1,0 +1,15 @@
+%meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+%meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+%meta{:content => "Webster.ai", :name => "author"}/
+%meta{:content => "Lieber Group", :name => "description"}/
+/ Document title
+%title Lieber Group
+/ Stylesheets & Fonts
+%link{:href => "css/plugins.css", :rel => "stylesheet"}/
+%link{:href => "css/style.css", :rel => "stylesheet"}/
+
+
+= csrf_meta_tags
+= csp_meta_tag
+= stylesheet_link_tag 'application'
+= javascript_include_tag 'application'

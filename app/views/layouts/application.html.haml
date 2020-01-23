@@ -1,0 +1,23 @@
+!!!
+%html{:lang => "en"}
+  %head= render 'shared/head'
+  %body
+    /
+      Body Inner
+    .body-inner
+      /
+        \/ = render 'shared/topbar'
+      - if current_page?(construction_index_path)
+        = render 'layouts/header_construction'
+        - elseif current_page?(mechanical_index_path)
+        = render 'layouts/header_mechanical'
+        - elseif current_page?(electrical_index_path)
+        = render 'layouts/header_electrical'
+        - elseif current_page?(fireproofing_index_path)
+        = render 'layouts/header_fireproofing'
+      - else
+        = render 'layouts/header'
+      = yield
+      = render 'shared/footer'
+    = render 'shared/scrolltop'
+    = render 'shared/plugins'

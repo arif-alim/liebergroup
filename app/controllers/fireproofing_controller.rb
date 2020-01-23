@@ -1,0 +1,2 @@
+class FireproofingController < ApplicationController
+end
