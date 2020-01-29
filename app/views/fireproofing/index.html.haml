@@ -1,60 +1,62 @@
 / Page title
 %section#page-title.text-light{"data-bg-video" => "video/fireproofing.mp4"}
-  .bg-overlay
-  .container
-    .page-title
-      %h1.text-uppercase.text-medium{style: "font-weight: 800"} 
-        Fireproofing Division
-      %span - Building your world -
+	.bg-overlay
+	.container
+		.page-title
+			%h1.text-uppercase.text-medium{style: "font-weight: 800"} 
+				Fireproofing Division
+			%span - Building your world -
 / end: Page title
 
 
 / Content
 %section#page-content
-  .container
-    / Construciton Services
-    #blog.grid-layout.post-3-columns.m-b-30{"data-item" => "post-item"}
-      / General Contracting
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/construction/general_contracting.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "General Construction", general_contracting_construction_index_path
-            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
-            %a.item-link{:href => "/construction/general_contracting"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: General Contracting
-      / Construction Managment
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/construction/construction_management.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Construction Management", construction_management_construction_index_path
-            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
-            %a.item-link{:href => "/construction/construction_management"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Construction Managment
-      / Design & Build
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/construction/design_builid.jpg"}/
-          .post-item-description
-            %h2
-              %a{:href => "#"}
-                Standard post with a single image
-            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
-            %a.item-link{:href => "/construction/design_build"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Design & Build
-      
+	.container
+		/ Construciton Services
+		#blog.grid-layout.post-3-columns.m-b-30{"data-item" => "post-item"}
+			/ General Contracting
+			.post-item.border
+				.post-item-wrap
+					.post-image
+						%a{:href => "/fireproofing/firestopping"}
+							%img{:alt => "", :src => "images/fireproofing/fp2.jpg"}/
+					.post-item-description
+						%h2
+							= link_to "Firestopping", firestopping_fireproofing_index_path
+						%p 
+							Firestopping is the practice of utilizing a system of joint and penetration sealants on a fire-rated wall, ceiling, or floor assembly...
+						%a.item-link{:href => "/fireproofing/firestopping"}
+							Read More
+							%i.fa.fa-arrow-right
+			/ end: General Contracting
+			/ Construction Managment
+			.post-item.border
+				.post-item-wrap
+					.post-image
+						%a{:href => "/fireproofing/intumescent_fireproofing"}
+							%img{:alt => "", :src => "images/fireproofing/fp1.jpg"}/
+					.post-item-description
+						%h2
+							= link_to "Intumescent Fireproofing", intumescent_fireproofing_fireproofing_index_path
+						%p 
+							Intumescent mastic coatings are fire retardants designed for both interior and exterior application to structural steel...
+						%a.item-link{:href => "/fireproofing/intumescent_fireproofing"}
+							Read More
+							%i.fa.fa-arrow-right
+			/ end: Construction Managment
+			/ Design & Build
+			.post-item.border
+				.post-item-wrap
+					.post-image
+						%a{:href => "/fireproofing/cementitious_fireproofing"}
+							%img{:alt => "", :src => "images/fireproofing/fp5.jpg"}/
+					.post-item-description
+						%h2
+							= link_to "Cementitious Fireproofing", cementitious_fireproofing_fireproofing_index_path
+						%p 
+							Spray applied cementitious fireproofing is specified by architects and favored by applicators to protect a buildings structural...
+						%a.item-link{:href => "/fireproofing/cementitious_fireproofing"}
+							Read More
+							%i.fa.fa-arrow-right
+			/ end: Design & Build
+			
