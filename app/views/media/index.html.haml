@@ -1,0 +1,234 @@
+/ Page title
+%section#page-title.text-light{:style => "background-image:url(/images/about/lg_about1.jpg); background-size: cover; background-position: center center;"}
+  .bg-overlay
+  .container
+    .page-title
+      %h1.text-uppercase.text-medium{style: "font-weight: 800"} 
+        Page Title - Background Image
+      %span 
+        Simple page title with background image
+
+
+/ Content
+%section#page-content
+  .container-fluid
+    / post content
+    
+    / Blog
+    #blog.grid-layout.post-4-columns.m-b-30{"data-item" => "post-item"}
+      / Post item
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/blog/12.jpg"}/
+            %span.post-meta-category
+              %a{:href => ""} Lifestyle
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"}
+                Standard post with a single image
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "#"}
+              Read More
+              %i.icon-chevron-right
+      / end: Post item
+      / Post item YouTube
+      .post-item.border
+        .post-item-wrap
+          .post-video
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "320", :src => "https://www.youtube.com/embed/dA8Smj5tZOQ", :width => "560"}
+            %span.post-meta-category
+              %a{:href => ""} Video
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"} This is a example post with YouTube
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "#"} Read More
+      / end: Post item YouTube
+      / Post item
+      .post-item.border
+        .post-item-wrap
+          .post-slider
+            .carousel.dots-inside.arrows-visible.arrows-only{"data-autoplay" => "true", "data-items" => "1", "data-lightbox" => "gallery", "data-loop" => "true"}
+              %a{"data-lightbox" => "gallery-image", :href => "images/blog/11.jpg"}
+                %img{:alt => "", :src => "images/blog/16.jpg"}/
+              %a{"data-lightbox" => "gallery-image", :href => "images/blog/16.jpg"}
+                %img{:alt => "", :src => "images/blog/11.jpg"}/
+            %span.post-meta-category
+              %a{:href => ""} Technology
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"} Simplicity, a post with slider gallery
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet. Pulvinar euismod antesagittis ante posuere ligula pharetra laoreet.
+            %a.item-link{:href => "#"}
+              Read More
+              %i.icon-chevron-right
+      / end: Post item
+      / Post item Vimeo
+      .post-item.border
+        .post-item-wrap
+          .post-video
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "320", :mozallowfullscreen => "", :src => "https://player.vimeo.com/video/198559065?title=0&byline=0&portrait=0", :webkitallowfullscreen => "", :width => "560"}
+            %span.post-meta-category
+              %a{:href => ""} Video
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"} This is a example post with Vimeo video
+            %p
+              Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+              Cagittis ante posuere ac. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "#"}
+              Read More
+              %i.icon-chevron-right
+      / end: Post item Vimeo
+      / Post item HTML5 Audio
+      .post-item.border
+        .post-item-wrap
+          .post-audio
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/blog/audio-bg.jpg"}/
+            %span.post-meta-category
+              %a{:href => ""} Audio
+            %audio.video-js.vjs-default-skin{:controls => "", "data-setup" => "{}", :preload => "false"}
+              %source{:src => "audio/beautiful-optimist.mp3", :type => "audio/mp3"}
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"} Self Hosted HTML5 Audio (mp3) with image cover
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ac sagittis ante posuere ac ligula pharetra laoreet.
+            %a.item-link{:href => "#"}
+              Read More
+              %i.icon-chevron-right
+      / end: Post item
+      / Post item
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/blog/17.jpg"}/
+            %span.post-meta-category
+              %a{:href => ""} Science
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"}
+                Standard post with a single image
+            %p
+              Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "#"}
+              Read More
+              %i.icon-chevron-right
+      / end: Post item
+      / Post item
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/blog/18.jpg"}/
+            %span.post-meta-category
+              %a{:href => ""} Science
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"}
+                Standard post with a single image
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "#"}
+              Read More
+              %i.icon-chevron-right
+      / end: Post item
+      / Post item
+      .post-item.border
+        .post-item-wrap
+          .post-slider
+            .carousel.dots-inside.arrows-visible.arrows-only{"data-animate-in" => "fadeIn", "data-animate-out" => "fadeOut", "data-autoplay" => "2600", "data-items" => "1", "data-lightbox" => "gallery", "data-loop" => "true"}
+              %a{"data-lightbox" => "gallery-image", :href => "images/blog/19.jpg"}
+                %img{:alt => "", :src => "images/blog/19.jpg"}/
+              %a{"data-lightbox" => "gallery-image", :href => "images/blog/20.jpg"}
+                %img{:alt => "", :src => "images/blog/20.jpg"}/
+            %span.post-meta-category
+              %a{:href => ""} Technology
+          .post-item-description
+            %span.post-meta-date
+              %i.fa.fa-calendar-o>
+              Jan 21, 2017
+            %span.post-meta-comments
+              %a{:href => ""}
+                %i.fa.fa-comments-o>
+                33 Comments
+            %h2
+              %a{:href => "#"} Simplicity, a post with slider gallery
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "#"}
+              Read More
+              %i.icon-chevron-right
+      / end: Post item
+    / end: Blog
+    / Pagination
+    %ul.pagination
+      %li.page-item
+        %a.page-link{:href => "#"}
+          %i.fa.fa-angle-left
+      %li.page-item
+        %a.page-link{:href => "#"} 1
+      %li.page-item
+        %a.page-link{:href => "#"} 2
+      %li.page-item.active
+        %a.page-link{:href => "#"} 3
+      %li.page-item
+        %a.page-link{:href => "#"} 4
+      %li.page-item
+        %a.page-link{:href => "#"} 5
+      %li.page-item
+        %a.page-link{:href => "#"}
+          %i.fa.fa-angle-right
+    / end: Pagination
+  / end: post content
+/ end: Content

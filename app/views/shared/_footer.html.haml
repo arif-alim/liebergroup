@@ -1,66 +1,75 @@
 
 / Footer
-%footer#footer.bg-transparent
+%footer#footer
   .footer-content
     .container
       .row
-        .col-lg-4
+        .col-lg-3
           .widget
-            %img{:src => "/images/logos/logo_international.png", :alt => "", :style => "width: 300px"}/
+            %img{:src => "/images/logos/default/logo_international.png", :alt => "Lieber Group International Division", :style => "width: 100%"}/
             %p.mb-5{:style => "margin-top:30px"}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            %a.btn.btn-inverted{:href => ""} 
-              International Inquiries
+              At Lieber Group, success is the output which serves the public interest.
+            = link_to "International Inquiries", {controller: "international", action: "index"}, class: "btn btn-inverse"
 
-        .col-lg-7.offset-lg-1
+        .col-lg-8.offset-lg-1
           .row
             .col-lg-3
               .widget
-                .widget-title Construction
+                .widget-title
+                  %a{:href => "/construction", style:"font-weight: 600"}
+                    Construction
                 %ul.list
                   %li
-                    %a{:href => "#"} Features
+                    = link_to "General Contracting", controller: 'construction', action: 'general_contracting'
                   %li
-                    %a{:href => "#"} Layouts
+                    = link_to "Construction Management", controller: 'construction', action: 'construction_management'
                   %li
-                    %a{:href => "#"} Corporate
-                  %li
-                    %a{:href => "#"} Updates
+                    = link_to "Deisgn & Build", controller: 'construction', action: 'design_build'
                   
             .col-lg-3
               .widget
-                .widget-title Mechanical
+                .widget-title
+                  %a{:href => "/mechanical", style:"font-weight: 600"}
+                    Mechanical
                 %ul.list
                   %li
-                    %a{:href => "#"} Layouts
+                    = link_to "Plumbing", controller: 'mechanical', action: 'plumbing'
                   %li
-                    %a{:href => "#"} Headers
+                    = link_to "HVAC", controller: 'mechanical', action: 'hvac' 
                   %li
-                    %a{:href => "#"} Widgets
+                    = link_to "Efficiency", controller: 'mechanical', action: 'efficiency'
                   %li
-                    %a{:href => "#"} Footers
+                    = link_to "Hydronics", controller: 'mechanical', action: 'hydronics'
             .col-lg-3
               .widget
-                .widget-title Electrical
+                .widget-title 
+                  %a{:href => "/electrical", style:"font-weight: 600"}
+                    Electrical
                 %ul.list
                   %li
-                    %a{:href => "#"} Portfolio
+                    = link_to "Maintenance", controller: 'electrical', action: 'maintenance'
                   %li
-                    %a{:href => "#"} Blog
+                    = link_to "Construction Projects", controller: 'electrical', index: 'construction_projects'
                   %li
-                    %a{:href => "#"} Shop
+                    = link_to "EV Charging Stations", controller: 'electrical', index: 'electric_vehicle_charging_stations'
+                  %li
+                    = link_to "Solar Panel Systems", controller: 'electrical', action: 'solar_panel_systems'
+                  %li
+                    = link_to "Lighting Retrofits", controller: 'electrical', action: 'lighting_retrofits'
             .col-lg-3
               .widget
-                .widget-title Fireproofing
+                .widget-title
+                  %a{:href => "/fireproofing", style:"font-weight: 600"}
+                    Fireproofing
                 %ul.list
                   %li
-                    %a{:href => "#"} Help Desk
+                    = link_to "Firestopping", controller: 'fireproofing', action: 'firestopping'
                   %li
-                    %a{:href => "#"} Documentation
+                    = link_to "Intumescent",  controller: 'fireproofing', action: 'intumescent_fireproofing'
                   %li
-                    %a{:href => "#"} Contact Us
+                    = link_to "Cementitious", controller: 'fireproofing', action: 'cementitious_fireproofing'
   .copyright-content
     .container
       .copyright-text.text-center
-        © 2020 Lieber Group - Changing the World | All Rights Reserved.
+        © 2020 Lieber Group - Building Your World! | All Rights Reserved.
 / end: Footer

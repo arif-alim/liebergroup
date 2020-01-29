@@ -4,20 +4,33 @@
   %body
     /
       Body Inner
-    .body-inner
-      /
-        \/ = render 'shared/topbar'
-      - if current_page?(construction_index_path)
-        = render 'layouts/header_construction'
-        - elseif current_page?(mechanical_index_path)
-        = render 'layouts/header_mechanical'
-        - elseif current_page?(electrical_index_path)
-        = render 'layouts/header_electrical'
-        - elseif current_page?(fireproofing_index_path)
-        = render 'layouts/header_fireproofing'
+    .body-inner  
+      - if current_page?(root_path)
+        = render 'shared/header'
+      - elsif current_page?(about_index_path)
+        = render 'shared/header_fixed'
+      - elsif current_page?(international_index_path)
+        = render 'shared/header'
+      - elsif current_page?(contact_index_path)
+        = render 'shared/header'
       - else
-        = render 'layouts/header'
+        = render 'shared/header_parallax'
       = yield
-      = render 'shared/footer'
+      - if not(current_page?(about_index_path))
+        = render 'shared/footer'
     = render 'shared/scrolltop'
-    = render 'shared/plugins'
+    / Scroll top
+    %a#scrollTop
+      %i.icon-chevron-up
+      %i.icon-chevron-up
+    / Plugins
+    %script{:src => "js/jquery.js"}
+    %script{:src => "js/plugins.js"}
+    / Template functions
+    %script{:src => "js/functions.js"}
+    / Google Maps files
+    %script{:src => "//maps.googleapis.com/maps/api/js?key=AIzaSyCP3qbTkyitzTqoOqGWXZ7TXHBoqeXYfvo", :type => "text/javascript"}
+    %script{:src => "plugins/gmap3/gmap3.min.js", :type => "text/javascript"}
+    %script{:src => "plugins/gmap3/map-styles.js", :type => "text/javascript"}
+
+

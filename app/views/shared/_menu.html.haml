@@ -1,0 +1,58 @@
+#mainMenu
+  .container
+    %nav
+      %ul
+        %li
+          = link_to "Home", root_path
+
+        %li
+          = link_to "About", about_index_path
+        %li
+          = link_to "Construction", construction_index_path
+          %ul.dropdown-menu
+            %li
+              = link_to "General Contracting", general_contracting_construction_index_path
+            %li
+              = link_to "Construction Management", construction_management_construction_index_path
+            %li
+              = link_to "Deisgn & Build", design_build_construction_index_path
+              
+        %li
+          = link_to "Mechanical", mechanical_index_path
+          %ul.dropdown-menu
+            %li
+              = link_to "Plumbing", plumbing_mechanical_index_path
+            %li
+              = link_to "HVAC", hvac_mechanical_index_path
+            %li
+              = link_to "Efficiency", efficiency_mechanical_index_path
+            %li
+              = link_to "Hydronics", hydronics_mechanical_index_path
+        %li
+          = link_to "Electrical", electrical_index_path
+          %ul.dropdown-menu
+            %li
+              = link_to "Maintenance", maintenance_electrical_index_path
+            %li
+              = link_to "Construction Projects", construction_projects_electrical_index_path
+            %li
+              = link_to "EV Charging Stations", electric_vehicle_charging_stations_electrical_index_path
+            %li
+              = link_to "Solar Panel Systems", solar_panel_systems_electrical_index_path
+            %li
+              = link_to "Lighting Retrofits", lighting_retrofits_electrical_index_path
+        %li
+          = link_to "Fireproofing", fireproofing_index_path
+          %ul.dropdown-menu
+            %li
+              = link_to "Firestopping", firestopping_fireproofing_index_path
+            %li
+              = link_to "Intumescent Fireproofing", intumescent_fireproofing_fireproofing_index_path
+            %li
+              = link_to "Cementitious Fireproofing", cementitious_fireproofing_fireproofing_index_path
+        / %li
+        /   = link_to "Media", media_path
+        %li
+          = link_to "International", international_index_path
+        %li
+          = link_to "Contact", contact_index_path

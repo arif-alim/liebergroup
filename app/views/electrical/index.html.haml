@@ -1,0 +1,89 @@
+/ Page title
+%section#page-title.text-light{"data-bg-video" => "video/electrical.mp4"}
+  .bg-overlay
+  .container
+    .page-title
+      %h1.text-uppercase.text-medium.text-bold
+        Electrical Division
+      %span - Building your world -
+/ end: Page title
+
+/ Content
+%section#page-content
+  .container
+    / Construciton Services
+    #blog.grid-layout.post-2-columns.m-b-30{"data-item" => "post-item"}
+      / General Contracting
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/construction/general_contracting.jpg"}/
+          .post-item-description
+            %h2
+              = link_to "General Construction", general_contracting_construction_index_path
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "/construction/general_contracting"}
+              Read More
+              %i.fa.fa-arrow-right
+      / end: General Contracting
+      / Construction Managment
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/construction/construction_management.jpg"}/
+          .post-item-description
+            %h2
+              = link_to "Construction Management", construction_management_construction_index_path
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "/construction/construction_management"}
+              Read More
+              %i.fa.fa-arrow-right
+      / end: Construction Managment
+    #blog.grid-layout.post-3-columns.m-b-30{"data-item" => "post-item"}
+      / Design & Build
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/construction/design_builid.jpg"}/
+          .post-item-description
+            %h2
+              %a{:href => "#"}
+                Standard post with a single image
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "/construction/design_build"}
+              Read More
+              %i.fa.fa-arrow-right
+      / end: Design & Build
+      / Construction Managment
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/construction/construction_management.jpg"}/
+          .post-item-description
+            %h2
+              = link_to "Construction Management", construction_management_construction_index_path
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "/construction/construction_management"}
+              Read More
+              %i.fa.fa-arrow-right
+      / end: Construction Managment
+      / Design & Build
+      .post-item.border
+        .post-item-wrap
+          .post-image
+            %a{:href => "#"}
+              %img{:alt => "", :src => "images/construction/design_builid.jpg"}/
+          .post-item-description
+            %h2
+              %a{:href => "#"}
+                Standard post with a single image
+            %p Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+            %a.item-link{:href => "/construction/design_build"}
+              Read More
+              %i.fa.fa-arrow-right
+      / end: Design & Build
+      

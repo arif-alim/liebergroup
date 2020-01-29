@@ -1,0 +1,30 @@
+#logo
+  - if current_page?('/construction') || current_page?('/construction/general_contracting') || current_page?('/construction/design_build') || current_page?('/construction/construction_management')
+    %a{:href => "/construction"}
+      %img.logo-default{:src => "/images/logos/default/logo_construction.png"}/
+      %img.logo-dark{:src => "/images/logos/dark/logo_construction.png"}/
+
+  - elsif current_page?('/mechanical') || current_page?('/mechanical/plumbing') || current_page?('/mechanical/hvac') || current_page?('/mechanical/efficiency') || current_page?('/mechanical/hydronics')
+    %a{:href => "/mechanical"}
+      %img.logo-default{:src => "/images/logos/default/logo_mechanical.png"}/
+      %img.logo-dark{:src => "/images/logos/dark/logo_mechanical.png"}/
+
+  - elsif current_page?('/electrical') || current_page?('/electrical/maintenance') || current_page?('/electrical/construction_projects') || current_page?('/electrical/electric_vehicle_charging_stations') || current_page?('/electrical/solar_panel_systems') || current_page?('/electrical/lighting_retrofits') || current_page?('/electrical/gas_detection_and_calibration')
+    %a{:href => "/electrical"}
+      %img.logo-default{:src => "/images/logos/default/logo_electrical.png"}/
+      %img.logo-dark{:src => "/images/logos/dark/logo_electrical.png"}/
+
+  - elsif current_page?('/fireproofing') || current_page?('/fireproofing/firestopping') || current_page?('/fireproofing/intumescent_fireproofing') || current_page?('/fireproofing/cementitious_fireproofing') 
+    %a{:href => "/fireproofing"}
+      %img.logo-default{:src => "/images/logos/default/logo_fireproofing.png"}/
+      %img.logo-dark{:src => "/images/logos/dark/logo_fireproofing.png"}/
+
+  - elsif current_page?(international_index_path)
+    %a{:href => "/international"}
+      %img.logo-default{:src => "/images/logos/default/logo_international.png"}/
+      %img.logo-dark{:src => "/images/logos/dark/logo_international.png"}/
+
+  - else
+    %a{:href => "/"}
+      %img.logo-default{:src => "/images/logos/default/logo_main.png"}/
+      %img.logo-dark{:src => "/images/logos/dark/logo_main.png"}/

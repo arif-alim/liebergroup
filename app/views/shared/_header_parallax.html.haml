@@ -1,0 +1,17 @@
+/ Header
+%header#header.dark.submenu-light{"data-fullwidth" => "true", "data-transparent" => "true"}
+  .header-inner
+    .container
+      / Logo
+      = render 'shared/logos'
+      / End: Logo
+      / Header Extras
+      - if current_page?(international_index_path)
+        = render 'shared/language'
+      / end: Header Extras
+      / Navigation Resposnive Trigger
+      #mainMenu-trigger
+        %a.lines-button.x
+          %span.lines
+      / end: Navigation Resposnive Trigger
+      = render 'shared/menu'
