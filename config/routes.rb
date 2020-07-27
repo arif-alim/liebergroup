@@ -35,7 +35,16 @@ Rails.application.routes.draw do
   resources :about, only: :index
   resources :media, only: :index
   resources :contact, only: :index
-  resources :international, only: :index
+  
+  resources :international, only: [:index] do
+    collection do
+      get 'newyork'
+      get 'dubai'
+      get 'london'
+      get 'australia'
+      get 'turkey'
+    end
+  end
 
   root to: 'home#index'
   get 'sitemap.xml', :to => 'sitemap#index', :defaults => {:format => 'xml'}
