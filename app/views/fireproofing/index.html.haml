@@ -1,57 +1,63 @@
 / Page title
 %section#page-title.text-light{"data-bg-video" => "https://liebergroup.s3.us-east-2.amazonaws.com/videos/fireproofing.mp4"}
-	.bg-overlay
-	.container
-		.page-title
-			%h1.text-uppercase.text-medium{style: "font-weight: 800"} 
-				Fireproofing Division
-			%span - Building your world -
+  .bg-overlay
+  .container
+    .page-title
+      %h1.text-uppercase.text-medium{style: "font-weight: 800"} 
+        Fireproofing Division
+      %span - Building your world -
 / end: Page title
 
 
 / Content
 %section#page-content
-	.container
-		/ Construciton Services
-		#blog.grid-layout.post-3-columns.m-b-30{"data-item" => "post-item"}
-			/ General Contracting
-			.post-item.border
-				.post-item-wrap
-					.post-image
-						%a{:href => "/fireproofing/firestopping"}
-							%img{:alt => "", :src => "/images/fireproofing/firestopping_header.jpg"}/
-					.post-item-description
-						%h2
-							= link_to "Firestopping", firestopping_fireproofing_index_path
-						%p 
-							Firestopping is the practice of utilizing a system of joint and penetration sealants on a fire-rated wall, ceiling, or floor assembly...
-						%a.item-link{:href => "/fireproofing/firestopping"}
-							Read More
-							%i.fa.fa-arrow-right
-			.post-item.border
-				.post-item-wrap
-					.post-image
-						%a{:href => "/fireproofing/intumescent_fireproofing"}
-							%img{:alt => "", :src => "/images/fireproofing/intumescent_fireproofing_header.jpg"}/
-					.post-item-description
-						%h2
-							= link_to "Intumescent Fireproofing", intumescent_fireproofing_fireproofing_index_path
-						%p 
-							Intumescent mastic coatings are fire retardants designed for both interior and exterior application to structural steel...
-						%a.item-link{:href => "/fireproofing/intumescent_fireproofing"}
-							Read More
-							%i.fa.fa-arrow-right
-			
-			.post-item.border
-				.post-item-wrap
-					.post-image
-						%a{:href => "/fireproofing/cementitious_fireproofing"}
-							%img{:alt => "", :src => "/images/fireproofing/cementitious_fireproofing_header.jpg"}/
-					.post-item-description
-						%h2
-							= link_to "Cementitious Fireproofing", cementitious_fireproofing_fireproofing_index_path
-						%p 
-							Spray applied cementitious fireproofing is specified by architects and favored by applicators to protect a buildings structural...
-						%a.item-link{:href => "/fireproofing/cementitious_fireproofing"}
-							Read More
-							%i.fa.fa-arrow-right
+  .container
+    .row.team-members.team-members-shadow.m-b-40.m-t-60
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/fireproofing/firestopping"}
+                %img{:alt => "", :src => "/images/fireproofing/firestopping_header.jpg"}/
+            .item-desc
+              %a{:href => "/fireproofing/firestopping"}
+                %h4 Firestopping
+              %p{style:"padding: 10px 20px;"} 
+                Firestopping is the practice of utilizing a system of joint and penetration sealants on a fire-rated wall, ceiling, or floor assembly...
+              .align-center
+                %a.item-link{:href => "/fireproofing/firestopping", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/fireproofing/intumescent_fireproofing"}
+                %img{:alt => "", :src => "/images/fireproofing/intumescent_fireproofing_header.jpg"}/
+            .item-desc
+              %a{:href => "/fireproofing/intumescent_fireproofing"}
+                %h4 Intumescent
+              %p{style:"padding: 10px 20px;"} 
+                Intumescent mastic coatings are fire retardants designed for both interior and exterior application to structural steel...
+              .align-center
+                %a.item-link{:href => "/fireproofing/intumescent_fireproofing", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/fireproofing/cementitious_fireproofing"}
+                %img{:alt => "", :src => "/images/fireproofing/cementitious_fireproofing_header.jpg"}/
+            .item-desc
+              %a{:href => "/fireproofing/cementitious_fireproofing"}
+                %h4 Cementitious
+              %p{style:"padding: 10px 20px;"} 
+                Spray applied cementitious fireproofing is specified by architects and favored by applicators to protect a buildings structural...
+              .align-center
+                %a.item-link{:href => "/fireproofing/firestopping", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+  
+      
+    

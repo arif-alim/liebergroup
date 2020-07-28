@@ -8,71 +8,67 @@
       %span - Building your world -
 / end: Page title
 
-
 / Content
 %section#page-content
   .container
-    / Construciton Services
-    #blog.grid-layout.post-2-columns.m-b-30{"data-item" => "post-item"}
-      / General Contracting
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/mechanical/plumbing"}
-              %img{:alt => "", :src => "/images/mechanical/plumbing_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Plumbing", plumbing_mechanical_index_path
-            %p 
-              LIEBER GROUP offers full turnkey commercial plumbing services. Our plumbers are licensed, trained and experienced in large and small...
-            %a.item-link{:href => "/mechanical/plumbing"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: General Contracting
-      / Construction Managment
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/mechanical/hvac"}
-              %img{:alt => "", :src => "/images/mechanical/hvac_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "HVAC", hvac_mechanical_index_path
-            %p 
-              LIEBER GROUP's mechanical background has allowed it to specialize in HVAC work. We supply, install, repair, install, repair and...
-            %a.item-link{:href => "/mechanical/hvac"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Construction Managment
-    #blog.grid-layout.post-2-columns.m-b-30{"data-item" => "post-item"}
-      / Design & Build
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/mechanical/efficiency"}
-              %img{:alt => "", :src => "/images/mechanical/efficiency_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Efficiency", efficiency_mechanical_index_path
-            %p 
-              We recognize the need for preventative measures to ensure equipment efficiency and longevity. By offering custom programs and upgrade...
-            %a.item-link{:href => "/mechanical/efficiency"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Design & Build
-      / Design & Build
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/mechanical/hydronics"}
-              %img{:alt => "", :src => "/images/mechanical/hydronics_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Hydronics", hydronics_mechanical_index_path
-            %p 
-              With over 20 years of industry experience, we understand the risks and demands involved in building HVAC and refrigeration systems...
-            %a.item-link{:href => "/mechanical/hydronics"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Design & Build
-      
+    .row.team-members.team-members-shadow.m-b-40.m-t-60
+      .col-lg-6
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/mechanical/plumbing"}
+                %img{:alt => "", :src => "/images/mechanical/plumbing_header.jpg"}/
+            .item-desc
+              %a{:href => "/mechanical/plumbing"}
+                %h4 Plumbing
+              %p{style:"padding: 10px 20px;"} 
+                LIEBER GROUP offers full turnkey commercial plumbing services. Our plumbers are licensed, trained and experienced in large and small...
+              .align-center
+                %a.item-link{:href => "/mechanical/plumbing", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-6
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/mechanical/hvac"}
+                %img{:alt => "", :src => "/images/mechanical/hvac_header.jpg"}/
+            .item-desc
+              %a{:href => "/mechanical/hvac"}
+                %h4 HVAC
+              %p{style:"padding: 10px 20px;"} 
+                LIEBER GROUP's mechanical background has allowed it to specialize in HVAC work. We supply, install, repair, install, repair and...
+              .align-center
+                %a.item-link{:href => "/mechanical/hvac", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-6
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/mechanical/efficiency"}
+                %img{:alt => "", :src => "/images/mechanical/efficiency_header.jpg"}/
+            .item-desc
+              %a{:href => "/mechanical/efficiency"}
+                %h4 Efficiency
+              %p{style:"padding: 10px 20px;"} 
+                We recognize the need for preventative measures to ensure equipment efficiency and longevity. By offering custom programs and upgrade...
+              .align-center
+                %a.item-link{:href => "/mechanical/efficiency", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-6
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/mechanical/hydronics"}
+                %img{:alt => "", :src => "/images/mechanical/hydronics_header.jpg"}/
+            .item-desc
+              %a{:href => "/mechanical/hydronics"}
+                %h4 Hydronics
+              %p{style:"padding: 10px 20px;"} 
+                With over 20 years of industry experience, we understand the risks and demands involved in building HVAC and refrigeration systems...
+              .align-center
+                %a.item-link{:href => "/mechanical/hydronics", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right

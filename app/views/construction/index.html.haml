@@ -8,55 +8,52 @@
       %span - Building your world -
 / end: Page title
 
-
 / Content
 %section#page-content
   .container
-    / Construciton Services
-    #blog.grid-layout.post-3-columns.m-b-30{"data-item" => "post-item"}
-      / General Contracting
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/construction/general_contracting"}
-              %img{:alt => "", :src => "/images/construction/general_contracting_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "General Construction", general_contracting_construction_index_path
-            %p 
-              As your general contractor, LIEBER GROUP will review your drawings and specifications for a fixed price, and provide you with...
-            %a.item-link{:href => "/construction/general_contracting"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: General Contracting
-      / Construction Managment
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/construction/construction_management"}
-              %img{:alt => "", :src => "/images/construction/construction_management_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Construction Management", construction_management_construction_index_path
-            %p 
-              Under a contract for Construction Management, the company secures a construction manager's services in order...
-            %a.item-link{:href => "/construction/construction_management"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Construction Managment
-      / Design & Build
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/construction/design_build"}
-              %img{:alt => "", :src => "/images/construction/design_build_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Design & Build", design_build_construction_index_path
-            %p 
-              The conventional and still popular approach of involving the design team separately from the contractor team was to do commercial...
-            %a.item-link{:href => "/construction/design_build"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Design & Build
-      
+    .row.team-members.team-members-shadow.m-b-40.m-t-60
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/construction/general_contracting"}
+                %img{:alt => "", :src => "/images/construction/general_contracting_header.jpg"}/
+            .item-desc
+              %a{:href => "/construction/general_contracting"}
+                %h4 General Construction
+              %p{style:"padding: 10px 20px;"} 
+                As your general contractor, LIEBER GROUP will review your drawings and specifications for a fixed price, and provide you with...
+              .align-center
+                %a.item-link{:href => "/construction/general_contracting", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/construction/construction_management"}
+                %img{:alt => "", :src => "/images/construction/construction_management_header.jpg"}/
+            .item-desc
+              %a{:href => "/construction/construction_management"}
+                %h4 Construction Management
+              %p{style:"padding: 10px 20px;"} 
+                Under a contract for Construction Management, the company secures a construction manager's services in order...
+              .align-center
+                %a.item-link{:href => "/construction/construction_management", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/construction/design_build"}
+                %img{:alt => "", :src => "/images/construction/design_build_header.jpg"}/
+            .item-desc
+              %a{:href => "/construction/design_build"}
+                %h4 Design & Build
+              %p{style:"padding: 10px 20px;"} 
+                The conventional and still popular approach of involving the design team separately from the contractor team was to do commercial...
+              .align-center
+                %a.item-link{:href => "/construction/design_build", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right

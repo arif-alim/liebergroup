@@ -3974,11 +3974,12 @@ span.highlight { padding: 0 5px; }
 -----------------------------------------------------------------*/
 .team-members .team-member { background-color: #ffffff; text-align: center; position: relative; overflow: hidden; margin-bottom: 30px; border-radius: 4px; }
 .team-members .team-member .team-image { margin-bottom: 20px; }
-.team-members .team-member .team-image > img { width: 100%; border-radius: 5px 5px 0 0; }
+.team-members .team-member .team-image > img { width: 100%; border-radius: 5px 5px 0 0; margin: 0; position: relative; padding: 0; }
 .team-members .team-member .team-desc { padding-bottom: 20px; padding-left: 10px; padding-right: 10px; }
 .team-members .team-member .team-desc > h3 { font-size: 16px; line-height: 22px; margin-bottom: 0; }
+.team-members .team-member .team-desc > h2 { font-size: 18px; letter-spacing: -0.1px; line-height: 23px; margin-bottom: 16px; color: #222; font-weight:600; }
 .team-members .team-member .team-desc > span { font-size: 13px; color: #bbbbbb; line-height: 18px; }
-.team-members .team-member .team-desc > p { margin-top: 10px; font-size: 14px; }
+.team-members .team-member .team-desc > p { margin-top: 10px; font-size: 14px; padding: 20px; }
 .team-members.team-members-circle .team-member { background-color: transparent; padding: 20px; }
 .team-members.team-members-circle .team-member .team-image > img { border-radius: 50%; }
 .team-members.team-members-card .team-member { border: 1px solid #eeeeee; border-radius: 4px; }

@@ -11,83 +11,84 @@
 / Content
 %section#page-content
   .container
-    / Construciton Services
-    #blog.grid-layout.post-2-columns.m-b-30{"data-item" => "post-item"}
-      / General Contracting
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/electrical/"}
-              %img{:alt => "", :src => "/images/electrical/maintenance_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Maintenance", maintenance_electrical_index_path
-            %p 
-              Day in and day out your facility requires electrical power to run effectively. Doesn’t it  make sense then for the qualified professionals...
-            %a.item-link{:href => "/construction/general_contracting"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: General Contracting
-      / Construction Managment
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/electrical/construction_projects"}
-              %img{:alt => "", :src => "/images/electrical/construction_projects_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Construction Projects", construction_projects_electrical_index_path
-            %p 
-              When it comes to electrical construction projects, LIEBER GROUP is one the most experienced electrical contractors in the Canada...
-            %a.item-link{:href => "/electrical/construction_projects"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Construction Managment
-    #blog.grid-layout.post-3-columns.m-b-30{"data-item" => "post-item"}
-      / Design & Build
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/electrical/electric_vehicle_charging_stations"}
-              %img{:alt => "", :src => "/images/electrical/electric_vehicle_charging_stations_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "EV Charging Stations", electric_vehicle_charging_stations_electrical_index_path
+    .row.team-members.team-members-shadow.m-b-40.m-t-60
+      .col-lg-6
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/electrical/"}
+                %img{:alt => "", :src => "/images/electrical/maintenance_header.jpg"}/
+            .item-desc
+              %a{:href => "/electrical/"}
+                %h4 Electrical
+              %p{style:"padding: 10px 20px;"} 
+                Day in and day out your facility requires electrical power to run effectively. Doesn’t it  make sense then for the qualified professionals...
+              .align-center
+                %a.item-link{:href => "/electrical/", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-6
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/electrical/construction_projects"}
+                %img{:alt => "", :src => "/images/electrical/construction_projects_header.jpg"}/
+            .item-desc
+              %a{:href => "/electrical/construction_projects"}
+                %h4 Construction Projects
+              %p{style:"padding: 10px 20px;"} 
+                When it comes to electrical construction projects, LIEBER GROUP is one the most experienced electrical contractors in the Canada...
+              .align-center
+                %a.item-link{:href => "/electrical/construction_projects", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/electrical/electric_vehicle_charging_stations"}
+                %img{:alt => "", :src => "/images/electrical/electric_vehicle_charging_stations_header.jpg"}/
+            .item-desc
+              %a{:href => "/electrical/electric_vehicle_charging_stations"}
+                %h4 EV Charging Stations
+              %p{style:"padding: 10px 20px;"} 
+                LIEBER GROUP can installs EV Charging Station for commercial acustomers in the GTA, Ontario, Vancouver, who have...
+              .align-center
+                %a.item-link{:href => "/electrical/electric_vehicle_charging_stations", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/electrical/solar_panel_systems"}
+                %img{:alt => "", :src => "/images/electrical/solar_panel_systems_header.jpg"}/
+            .item-desc
+              %a{:href => "/electrical/solar_panel_systems"}
+                %h4 Solar Panel Systems
+              %p{style:"padding: 10px 20px;"} 
+                Investing in a solar generation system allows you to control your electricity expenses. As hydro electric rates continue to rise...
+              .align-center
+                %a.item-link{:href => "/electrical/solar_panel_systems", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
+      .col-lg-4
+        .team-members
+          .team-member
+            .post-image
+              %a{:href => "/electrical/lighting_retrofits"}
+                %img{:alt => "", :src => "/images/electrical/lighting_retrofits_header.jpg"}/
+            .item-desc
+              %a{:href => "/electrical/lighting_retrofits"}
+                %h4 Lighting Retrofits
+              %p{style:"padding: 10px 20px;"} 
+                At LIEBGER GROUP, we specialize in environmentally friendly, state-of-the-art, energy-saving LED lighting retrofits...
+              .align-center
+                %a.item-link{:href => "/electrical/lighting_retrofits", style:"margin-bottom:25px"}
+                  Read More
+                  %i.fa.fa-arrow-right
 
-            %p 
-              LIEBER GROUP can installs EV Charging Station for commercial acustomers in the GTA, Ontario, Vancouver, who have purchased or will soon be...
-            %a.item-link{:href => "/electrical/electric_vehicle_charging_stations"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Design & Build
-      / Construction Managment
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/electrical/solar_panel_systems"}
-              %img{:alt => "", :src => "/images/electrical/solar_panel_systems_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Solar Panel Systems", solar_panel_systems_electrical_index_path
-            %p 
-              Investing in a solar generation system allows you to control your electricity expenses. As hydro electric rates continue to rise, solar is...
-            %a.item-link{:href => "/electrical/solar_panel_systems"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Construction Managment
-      / Design & Build
-      .post-item.border
-        .post-item-wrap
-          .post-image
-            %a{:href => "/electrical/lighting_retrofits"}
-              %img{:alt => "", :src => "/images/electrical/lighting_retrofits_header.jpg"}/
-          .post-item-description
-            %h2
-              = link_to "Lighting Retrofits", lighting_retrofits_electrical_index_path
-            %p 
-              At LIEBGER GROUP, we specialize in environmentally friendly, state-of-the-art, energy-saving LED lighting retrofits for Industrial...
-            %a.item-link{:href => "/electrical/lighting_retrofits"}
-              Read More
-              %i.fa.fa-arrow-right
-      / end: Design & Build
-      
+
+
+
+    
