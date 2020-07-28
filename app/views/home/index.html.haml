@@ -1,10 +1,49 @@
 / Four HTML5 videos
 %section.no-padding
+  .container-fullwidth.d-block.d-sm-none
+
+    .row
+      / Desktop & Tablet
+      / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/construction_clip.mp4", :style => "height: 550px;"}
+      .col-xs{:style => "background-image:url(/images/home/construction.jpg); background-size: cover; background-position: center center; height: 300px; width: 50%"}
+        %a{:href => "/construction"}
+          .bg-overlay{"data-style" => "100"}
+          .row.align-items-bottom
+            .heading-text.text-light.mb-0.p-10
+              %h5{style:"font-size:22px"} 
+                %b
+                  Construction
+      / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/mechanical_clip.mp4", :style => "height: 550px;"}
+      .col-xs{:style => "background-image:url(/images/home/mechanical.jpg); background-size: cover; background-position: center center; height: 300px; width: 50%"}
+        %a{:href => "/mechanical"}
+          .row.align-items-bottom
+            .heading-text.text-light.mb-0.p-10
+              %h5{style:"font-size:22px"} 
+                %b
+                  Mechanical
+      / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/electrical_clip.mp4", :style => "height: 550px;"}
+      .col-xs{:style => "background-image:url(/images/home/electrical.jpg); background-size: cover; background-position: center center; height: 300px; width: 50%"}
+        %a{:href => "/electrical"}
+          .row.align-items-bottom
+            .heading-text.text-light.mb-0.p-10
+              %h5{style:"font-size:22px"} 
+                %b
+                  Electrical
+      / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/fireproofing_clip.mp4", :style => "height: 550px;"}
+      .col-xs{:style => "background-image:url(/images/home/fireproofing.jpg); background-size: cover; background-position: center center; height: 300px; width: 50%"}      
+        %a{:href => "/fireproofing"}
+          .row.align-items-bottom
+            .heading-text.text-light.mb-0.p-10
+              %h5{style:"font-size:22px"} 
+                %b
+                  Fireproofing
+
+
   .container-fullwidth
     .row
       / Desktop & Tablet
       / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/construction_clip.mp4", :style => "height: 550px;"}
-      .col-md-3.d-none.d-sm-block{:style => "background-image:url(/images/home/construction.jpg); background-size: cover; background-position: center center; height: 600px"}
+      .col-md-3.d-none.d-sm-block.d-xs-block{:style => "background-image:url(/images/home/construction.jpg); background-size: cover; background-position: center center; height: 600px"}
         %a{:href => "/construction"}
           .bg-overlay{"data-style" => "10"}
           .row.align-items-bottom
@@ -13,22 +52,22 @@
                 Construction
       
       / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/mechanical_clip.mp4", :style => "height: 550px;"}
-      .col-md-3.d-none.d-sm-block{:style => "background-image:url(/images/home/mechanical.jpg); background-size: cover; background-position: center center; height: 600px"}
+      .col-md-3.d-none.d-sm-block.d-xs-block{:style => "background-image:url(/images/home/mechanical.jpg); background-size: cover; background-position: center center; height: 600px"}
         %a{:href => "/mechanical"}
           .bg-overlay{"data-style" => "10"}
           .row.align-items-bottom
             .heading-text.text-light.mb-0.p-20
               %h4 Mechanical
       
-      / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/electrical_clip.mp4", :style => "height: 550px;"}
-      .col-md-3.d-none.d-sm-block{:style => "background-image:url(/images/home/electrical.jpg); background-size: cover; background-position: center center; height: 600px"}
+      / .col-md-3.d-none.d-sm-block.d-xs-block{"data-bg-video" => "video/electrical_clip.mp4", :style => "height: 550px;"}
+      .col-md-3.d-none.d-sm-block.d-xs-block{:style => "background-image:url(/images/home/electrical.jpg); background-size: cover; background-position: center center; height: 600px"}
         %a{:href => "/electrical"}
           .bg-overlay{"data-style" => "10"}
           .row.align-items-bottom
             .heading-text.text-light.mb-0.p-20
               %h4 Electrical
-      / .col-md-3.d-none.d-sm-block{"data-bg-video" => "video/fireproofing_clip.mp4", :style => "height: 550px;"}
-      .col-md-3.d-none.d-sm-block{:style => "background-image:url(/images/home/fireproofing.jpg); background-size: cover; background-position: center center; height: 600px"}      
+      / .col-md-3.d-none.d-sm-block.d-xs-block{"data-bg-video" => "video/fireproofing_clip.mp4", :style => "height: 550px;"}
+      .col-md-3.d-none.d-sm-block.d-xs-block{:style => "background-image:url(/images/home/fireproofing.jpg); background-size: cover; background-position: center center; height: 600px"}      
         %a{:href => "/fireproofing"}
           .bg-overlay{"data-style" => "10"}
           .row.align-items-bottom
