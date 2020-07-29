@@ -4875,3 +4875,13 @@ body[data-bg-image] { background-attachment: fixed; background-position: top cen
 .letter-space-2 {
   letter-spacing: -0.2px;
 }
+
+.fillwidth {
+    min-width: 100%;
+    height: auto;
+}
+
+.fillheight {
+    min-height: 100%; 
+    width: auto;
+}
